@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-fantasy-name {
+    font-family: 'Cinzel Decorative', 'MedievalSharp', 'Almendra', serif;
+  }
+  .font-medieval {
+    font-family: 'MedievalSharp', cursive, serif;
+  }
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Ancient Alchemist Workbench dark textured background */
+.alchemist-workbench-bg {
+  background-color: #0c0a09;
+  background-image: 
+    /* Candlelight ambient glows */
+    radial-gradient(circle at 15% 20%, rgba(245, 158, 11, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 85% 30%, rgba(217, 119, 6, 0.10) 0%, transparent 45%),
+    radial-gradient(circle at 50% 80%, rgba(180, 83, 9, 0.08) 0%, transparent 50%),
+    /* Dark woodgrain / weathered slate texture pattern */
+    repeating-linear-gradient(45deg, rgba(30, 27, 24, 0.45) 0px, rgba(30, 27, 24, 0.45) 2px, transparent 2px, transparent 6px),
+    repeating-linear-gradient(-45deg, rgba(20, 18, 16, 0.6) 0px, rgba(20, 18, 16, 0.6) 3px, transparent 3px, transparent 8px),
+    linear-gradient(180deg, #120e0b 0%, #0d0a08 50%, #080605 100%);
+  background-attachment: fixed;
+}
+
+/* Aged Parchment / Alchemical Tablet styling */
+.alchemist-parchment-card {
+  background: linear-gradient(165deg, rgba(38, 30, 24, 0.95) 0%, rgba(26, 20, 16, 0.98) 60%, rgba(18, 14, 11, 1) 100%);
+  box-shadow: 
+    0 20px 50px -10px rgba(0, 0, 0, 0.9),
+    0 0 35px -5px rgba(217, 119, 6, 0.15),
+    inset 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Brass & Bronze rivets */
+.brass-rivet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fef08a, #b45309 60%, #451a03 100%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+}
